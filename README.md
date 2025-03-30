@@ -1,60 +1,73 @@
-# Astro Starter Kit: Blog
+# Astro Developer Portfolio Template
+A minimal, easy-to-customize developer portfolio template built with [Astro](https://astro.build/) and [TailwindCSS](https://tailwindcss.com/). No JavaScript in final build.
 
-![Astro Template Preview](https://github.com/withastro/astro/assets/2244813/ff10799f-a816-4703-b967-c78997e8323d)
+## Demo
+Check out a real-world example: [devidev.io](https://devidev.io)
 
-<!-- dash-content-start -->
+![Astro Developer Portfolio Template - About Preview | devi|dev|io](assets/preview-about.png)
 
-Create a blog with Astro and deploy it on Cloudflare Workers as a [static website](https://developers.cloudflare.com/workers/static-assets/).
+![Astro Developer Portfolio Template - Projects Preview | devi|dev|io](assets/preview-projects.png)
 
-Features:
+## Features
+- No bundled JavaScript – optimized for performance and speed.
+- Fully responsive – mobile-friendly and adaptable across all devices.
+- SEO & Social Media Ready – includes OpenGraph, Twitter, and DublinCore metadata.
+- 100/100 Google PageSpeed Score – for both mobile and desktop.
+- Code highlighting – clean and readable syntax with [Shiki](https://github.com/shikijs/shiki).
+- Developer Portfolio & Projects Showcase – display your work with ease.
+- Code Editor-Inspired Design – modern and developer-friendly aesthetics.
 
-- ✅ Minimal styling (make it your own!)
-- ✅ 100/100 Lighthouse performance
-- ✅ SEO-friendly with canonical URLs and OpenGraph data
-- ✅ Sitemap support
-- ✅ RSS Feed support
-- ✅ Markdown & MDX support
-
-<!-- dash-content-end -->
+## Tech Stack
+- [Astro](https://astro.build/)
+- [TailwindCSS](https://tailwindcss.com/)
+- [Shiki](https://github.com/shikijs/shiki)
 
 ## Getting Started
 
-Outside of this repo, you can start a new project with this template using [C3](https://developers.cloudflare.com/pages/get-started/c3/) (the `create-cloudflare` CLI):
+```sh
+# 1. Clone the repository
+git clone https://github.com/devidevio/astro-developer-portfolio .
 
-```bash
-npm create cloudflare@latest -- --template=cloudflare/templates/portfolio
+# 2. Install dependencies
+npm install
+
+# 3. Run the development server
+npm run dev
+
+# 4. Build for production
+npm run build
+
+# Deploy the contents of the `./dist` folder wherever you like.
 ```
 
-A live public deployment of this template is available at [https://portfolio.templates.workers.dev](https://portfolio.templates.workers.dev)
+## Customization
+### Site & Domain Configuration
+- Modify `astro.config.mjs` to update your `site` settings, including metadata for SEO.
 
-## 🚀 Project Structure
+### Theme Customization
+- Adjust the primary theme color in `tailwind.config.js`, to fit your branding.
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+### Updating Content & SEO
+Edit the **Frontmatter** variables in these files:
+- `src/layouts/Layout.astro` – General page info (title, SEO, etc.)
+- `src/components/Socials.astro` – Update your social media links.
+- `src/components/Profile.astro` – Personal profile information.
+- `src/components/ContentProjects.astro` – Projects/portfolio section content.
+- `src/components/ContentAbout.astro` – About section content.
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+### Profile Picture
+- Replace `/src/assets/profile.png` with your own image.
 
-The `src/content/` directory contains "collections" of related Markdown and MDX documents. Use `getCollection()` to retrieve posts from `src/content/blog/`, and type-check your frontmatter using an optional schema. See [Astro's Content Collections docs](https://docs.astro.build/en/guides/content-collections/) to learn more.
+### Logo & OpenGraph Image
+- Update these files:
+  - `/public/img/logo.svg` (your logo)
+  - `/public/img/meta.png` (your OpenGraph image)
 
-Any static assets, like images, can be placed in the `public/` directory.
+Need a free OpenGraph image?
+- https://tailwind-generator.com/og-image-generator/generator
 
-## 🧞 Commands
+### Sitemap & Robots.txt
+- Adjust `/public/robots.txt` to match your domain.
 
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-| `npm run deploy`          | Deploy your production site to Cloudflare        |
-
-## 👀 Want to learn more?
-
-Check out [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
-
-## Credit
-
-This theme is based off of the lovely [Bear Blog](https://github.com/HermanMartinus/bearblog/).
+## ⭐ Contributing
+Feel free to fork, customize, and contribute to this project. If you find it useful, leaving a star would be greatly appreciated.
