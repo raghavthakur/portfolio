@@ -8,43 +8,51 @@ const code = `interface Developer {
 };
 
 interface TechStack {
-    devOps: string[];
-    backend: string[];
-   frontend: string[];
+    languages: string[];
+    systems: string[];
+    tools: string[];
+    roles: string[];
 };
 
 type ContactType = 'github' | 'linkedIn' | 'email';
 
 const techStack: TechStack = {
-    devOps: [
-        'GitLab',
-        'GitHub',
-        'Cloudflare',
-        'Docker'
-    ],
-    frontend: [
-        'Angular',
-        'JavaScript',
+    languages: [
+        'Java',
+        'Python',
+        'C/C++',
+        'C#',
         'TypeScript',
-        'TailwindCSS',
-        'PrimeNG',
-        'Astro',
-        'Ionic',
-        'Stencil',
-        'Capacitor',
-        'SCSS',
-        'Markdown',
-        'WordPress'
+        'JavaScript',
+        'HTML/CSS'
     ],
-    backend: [
-        'Supabase',
-        'Node.js',
-        'Bun',
-        'Deno',
-        'PostgreSQL',
+    systems: [
+        'AWS',
+        'Azure',
+        'S3',
+        'DynamoDB',
+        'ElasticSearch',
         'MySQL',
-        'S3 Storage',
-        'Resend'
+        'MongoDB'
+    ],
+    tools: [
+        'Node.js',
+        'React',
+        'Git',
+        'CI/CD',
+        'JUnit',
+        'Docker',
+        'VM',
+        'Unix CLI'
+    ],
+    roles: [
+        'Backend',
+        'Full-Stack',
+        'DevOps',
+        'Agile',
+        'Project Management',
+        'Scrum Master',
+        'Team Lead'
     ]
 };
 
@@ -52,17 +60,17 @@ const techStack: TechStack = {
 const me: Developer = {
     name: 'Dejan Vi.',
     skills: [
-        ...techStack.devOps,
-        ...techStack.backend,
-        ...techStack.frontend
+        ...techStack.languages,
+        ...techStack.systems,
+        ...techStack.tools,
+        ...techStack.roles
     ],
     interests: [
-        'Open Source',
-        'Security',
-        'Privacy',
-        'Performance',
-        'Self-Hosting',
-        'Networking'
+        'Distributed Systems',
+        'Machine Learning',
+        'Deep Learning',
+        'LLMs',
+        'Open Source'
     ]
 };
 
